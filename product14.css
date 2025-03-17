@@ -1,0 +1,696 @@
+body {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+* {
+  box-sizing: border-box;
+}
+/*topnav*/
+header {
+  background-color: #262626;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+
+.fretless {
+    filter: contrast(200%);
+    width: 180px;
+    height: 69px;
+    margin-top: 10px;
+}
+
+.user {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.search-bar {
+    align-items: center;
+}
+
+.search {
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.nav-item .nav-link img:hover {
+  filter: invert(100%);
+}
+
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+/*topnav*/
+
+.main-div {
+  margin-top: 20px;
+  margin-left: 2.5%;
+  max-width: 95%;
+  display: flex;
+  padding: 10px;
+}
+
+
+/* slideshow */
+.ss {
+  display: block;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+
+.slideshow-container img {
+    height: 400px;
+    margin-left: 25%;
+}
+
+.slideshow-container {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  background-color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* slideshow */
+
+.product-info {
+  height: 450px;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.prod-des {
+  padding: 20px;
+}
+
+.product-info h2 {
+  padding-top: 20px;
+  text-align: center
+}
+
+.num {
+  font-size: 12px;
+}
+
+.description {
+  height: 180px;
+  margin-top: 20px;
+  text-align: justify;
+  overflow: auto;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.star {
+    color: #f8ce0b; 
+    font-size: 20px;
+}
+
+.buttons {
+  display: inline-flex;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.buttons button {
+  margin: 20px;
+  height: 60px;
+  width: 300px;
+  font-weight: bold;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.buttons button:hover {
+  background-color: white; 
+  filter: invert(100%);
+}
+
+/* 2ndfloor */
+
+.other-desc {
+  padding: 3%;
+  margin: 20px;
+  max-height: auto;
+  display: block;
+  font-size: 13px;
+  align-items: center;
+}
+
+.Body  {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.neck {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.hardware {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.electronics {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.misc {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+/* 2ndfloor */
+
+.chat-head {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.chat-head img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+}
+
+/* Styles for modal dialog */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles for chat messages */
+.chat-area {
+    max-height: 300px; /* Limit the height of the chat area */
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.user-message {
+    background-color: gray;
+    color: white;
+    align-self: flex-end; /* Align user messages to the right */
+}
+
+.other-message {
+    background-color: #333;
+    color: white;
+    align-self: flex-start; /* Align other party messages to the left */
+}
+
+/* Styles for input area */
+.input-area {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer-content {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h2 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.last {
+  text-align: center;
+}
+
+
+@media(max-width:996px) {
+  * {
+    margin: 0px;
+  }
+
+  .prev, .next,.text {font-size: 11px}
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 2;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .main-div {
+    width: 90%;
+    display: block;
+    margin: 0%;
+  }
+
+  .slideshow-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    background-color: white; 
+  }
+
+  .slideshow-container img {
+ 
+  }
+
+  .product-info {
+    display: block;
+  }
+
+  .buttons {
+    display: block;
+  }
+
+  .buttons button {
+  margin: 20px;
+  height: 60px;
+  width: 350px;
+  font-weight: bold;
+  background-color: #333;
+  border-radius: 10px;
+  }
+
+  .user {
+    margin-right: 0px;
+  }
+
+  .other-desc {
+    width: 80%;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+  }
+
+  .Body {
+    display: block;
+  }
+
+  .neck {
+    display: block;
+  }
+
+  .hardware {
+    display: block;
+  }
+
+  .electronics {
+    display: block;
+  }
+
+  .misc {
+    display: block;
+  }
+
+footer {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.footer-content {
+  font-size: 15px;
+  display: block;
+}
+
+.footer-section {
+  flex: 1;
+  /*padding: 0 20px;*/
+}
+
+.footer-section h2 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.last {
+  font-size: 10px;
+  text-align: center;
+}
+
+@media(max-width:389px) {
+
+  .fretless{
+    margin-left: 60px;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  .slideshow-container {
+    width: 100%;
+    height: 330px;
+  }
+
+  .main-div {
+    max-width: 100%;
+    padding: 0px;
+    margin-left: 20px;
+  }
+
+  .slideshow-container img {
+    margin-left: 55px;
+    width: 65%;
+    height: auto;
+    margin-top: ;
+  }
+
+  .description {
+    text-align: left;
+    width: 100%;
+    height: 300px;
+  }
+
+  .product-info {
+    padding: 0px;
+    margin: 0px;
+    height: 650px;
+  }
+
+  .prod-des {
+    padding: 0px;
+  }
+
+  .buttons {
+    display: block;
+  }
+
+  .buttons button {
+  width: 88%;
+  }
+
+  .other-desc {
+    margin: 0%;
+    padding: 20px;
+    display: block;
+    max-width: 75%;
+    max-height: auto;
+  }
+
+  .Body {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .neck {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .hardware {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .electronics {
+    display: block;
+    padding-bottom: 10px;
+  }
+
+  .misc {
+    display: block;
+    padding-bottom: 10px; 
+  }
+
+  footer {
+  padding: 20px 0;
+}
+
+.footer-content {
+  font-size: 15px;
+  display: block;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h2 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.last {
+  font-size: 10px;
+  text-align: center;
+}
+
+}
+
